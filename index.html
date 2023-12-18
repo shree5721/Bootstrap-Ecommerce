@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelika</title>
+    <!-- Custom css link -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Bootstrap CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+      <!-- Navigation Section -->
+      <section id="header" class="navigation">
+        <nav class="navbar navbar-expand-lg bg-white fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img decoding="async" src="/images/logo1.jpg" class="img-fluid logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#products">Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#special">Special</a>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link" href="#review">Reviews</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
+
+      <!-- Home section -->
+      <section id="home" class="home pt-5 overflow-hidden">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active bg-black" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2" class="bg-black"></button>
+             
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+               <div class="home-banner home-banner-1">
+                <div class="home-banner-text">
+                    <h1>Womens</h1>
+                    <h2>50% Discount For This Seson.</h2>
+                    <a href="#" class="btn btn-danger text-uppercase mt-4">Our Products</a>
+                </div>
+               </div>
+              </div>
+              <div class="carousel-item">
+                <div class="home-banner home-banner-2">
+                    <div class="home-banner-text">
+                        <h1>Explre more</h1>
+                        <h2>60% Discount</h2>
+                        <a href="#" class="btn btn-danger text-uppercase mt-4">Products</a>
+                    </div>
+                   </div>
+              </div>
+             
+            </div>
+            <button class="carousel-control-prev d-inline" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon bg-black border rounded-4" aria-hidden="true">
+                <i class="fa-solid fa-chevron-left"></i>
+              </span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next d-inline" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon bg-black border rounded-4" aria-hidden="true">
+                <i class="fa-solid fa-chevron-right"></i>
+              </span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </section>
+
+      <!-- Product section -->
+      <div class="offers mb-5" id="products">
+        <div class="row">
+          <h2 class="text-center my-4 position-relative offer-banner">Grab The Below Offers</h2>
+        </div>
+        <div class="container">
+          <div class="row">
+            <!-- Offer box 1 -->
+            <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4 mt-4">
+
+              <a href="">
+               <div class="offer-box text-center position-relative">
+                <div class="offer-inner">
+                  <div class="offer-image position-relative overflow-hidden">
+                    <img src="/images/model4.avif" class="img-fluid" alt="Offers1">
+                  </div>
+
+                  <div class="offer-info">
+                    <p class="offer-heading text-capitalize">Womens Formal Dress</p>
+                    <p class="offer-price font-weight-bold"><b>₹800</b><del>2500</del><span>(65%Off)</span></p>
+                    <button type="button" class="btn btn-outline-danger text-uppercase mt-3">Shop Now</button>
+                  </div>
+
+                </div>
+               </div>
+              </a>
+            </div>
+            <!-- Offer box 2 -->
+            <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4 mt-4">
+
+              <a href="">
+                <div class="offer-box text-center position-relative mb-4 m-sm-0 m-lg-0">
+                  <div class="offer-inner">
+                    <div class="offer-image position-relative overflow-hidden">
+                      <img src="/images/model1.avif" class="img-fluid" alt="Offers1">
+                    </div>
+  
+                    <div class="offer-info">
+                      <p class="offer-heading text-capitalize">Mens stylish white shirt</p>
+                      <p class="offer-price font-weight-bold"><b>₹500</b><del>1000</del><span>(50%Off)</span></p>
+                      <button type="button" class="btn btn-outline-danger text-uppercase mt-3">Shop Now</button>
+                    </div>
+  
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Offer box 3 -->
+            <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4 mt-4">
+
+              <a href="">
+               <div class="offer-box text-center position-relative">
+                <div class="offer-inner">
+                  <div class="offer-image position-relative overflow-hidden">
+                    <img src="/images/model2.avif" class="img-fluid" alt="Offers1">
+                  </div>
+
+                  <div class="offer-info">
+                    <p class="offer-heading text-capitalize">Mens stylish gray shirt.</p>
+                    <p class="offer-price font-weight-bold"><b>₹1300</b><del>2000</del><span>(65%Off)</span></p>
+                    <button type="button" class="btn btn-outline-danger text-uppercase mt-3">Shop Now</button>
+                  </div>
+
+                </div>
+               </div>
+              </a>
+            </div>
+            <!-- Offer box 4 -->
+            <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4 mt-4">
+
+              <a href="">
+               <div class="offer-box text-center position-relative">
+                <div class="offer-inner">
+                  <div class="offer-image position-relative overflow-hidden">
+                    <img src="/images/model3.avif" class="img-fluid" alt="Offers1">
+                  </div>
+
+                  <div class="offer-info">
+                    <p class="offer-heading text-capitalize">Stylish mens jacket</p>
+                    <p class="offer-price font-weight-bold"><b>₹1650</b><del>2700</del><span>(60%Off)</span></p>
+                    <button type="button" class="btn btn-outline-danger text-uppercase mt-3">Shop Now</button>
+                  </div>
+
+                </div>
+               </div>
+              </a>
+            </div>
+            <!-- Offer box 5 -->
+            <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4 mt-4">
+
+              <a href="">
+               <div class="offer-box text-center position-relative">
+                <div class="offer-inner">
+                  <div class="offer-image position-relative overflow-hidden">
+                    <img src="/images/model6.avif" class="img-fluid" alt="Offers1">
+                  </div>
+
+                  <div class="offer-info">
+                    <p class="offer-heading text-capitalize">Floral print v-neck Womens top.</p>
+                    <p class="offer-price font-weight-bold"><b>₹420</b><del>600</del><span>(70%Off)</span></p>
+                    <button type="button" class="btn btn-outline-danger text-uppercase mt-3">Shop Now</button>
+                  </div>
+
+                </div>
+               </div>
+              </a>
+            </div>
+            <!-- Offer box 6 -->
+            <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4 mt-4">
+
+              <a href="">
+               <div class="offer-box text-center position-relative">
+                <div class="offer-inner">
+                  <div class="offer-image position-relative overflow-hidden">
+                    <img src="/images/model5.avif" class="img-fluid" alt="Offers1">
+                  </div>
+
+                  <div class="offer-info">
+                    <p class="offer-heading text-capitalize">Beautifull formal dress.</p>
+                    <p class="offer-price font-weight-bold"><b>₹1000</b><del>2000</del><span>(50%Off)</span></p>
+                    <button type="button" class="btn btn-outline-danger text-uppercase mt-3">Shop Now</button>
+                  </div>
+
+                </div>
+               </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel mt-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 upto-offer position-relative">
+              <img src="/images/lg.jpg" alt="" class="img-fluid">
+              <div class="upto-offer-cont position-absolute">
+                <h2 class="text-white pannel-offer">Upto 75% Off On Sports Wear</h2>
+              </div>
+            </div>
+           
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Special offer section -->
+      <div class="special" id="special">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="special-headline text-center position-relative mb-4">
+                <h2 class="pb-2">Winter Sale</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-sm-12 col-lg-7 text-center text-lg-start">
+              <div class="special-content">
+                <h2 class="text-capitalize">Women relaxed pullover tshirt</h2>
+                <p>Easy 10 days return and exchange. Return Policies may vary based on products and promotions. For full details on our Returns Policies, please click here․</p>
+                <ul class="list-unstyled">
+                  <li><span class="fs-1 d-block"id="days">00</span>Days</li>
+                  <li><span class="fs-1 d-block"id="hours">00</span>Hours</li>
+                  <li><span class="fs-1 d-block"id="min">00</span>Min</li>
+                  <li><span class="fs-1 d-block"id="sec">00</span>Sec</li>
+                </ul>
+                <span class="countdown-price h2 "><b>₹800</b><del>₹1600</del></span>
+                <button type="button" class="btn btn-danger d-block mt-3">Add To Cart</button>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-lg-5">
+              <div class="special-image position-relative">
+                <span class="sale">SALE</span>
+                <img src="/images/model7.avif" alt="" class="img-fluid">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Review section -->
+
+       <section id="review" class="review mb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="headline text-center mb-5 mt-4">
+              <h2 class="pb-3 position-relative d-inline-block">Review section</h2>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-8 offset-lg-2 text-center">
+            
+              
+            <div id="carouselExampleIndicators" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              </div>
+              <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                  <div class="caro-image">
+                    <img src="/images/user.png" class="img-fluid" alt="Not found">
+                  </div>
+                  <h4 class="user-name font-weight-bolder">Ahana Sharma</h4>
+                  <h6 class="user-city">Pune,Maharashtra</h6>
+                  <p class="comments">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa ex sunt, deleniti dolore reiciendis possimus tempore adipisci id aspernatur consectetur.</p>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="caro-image">
+                    <img src="/images/user2.png" class="img-fluid" alt="Not found">
+                  </div>
+                  <h4 class="user-name font-weight-bolder">Shree Pore</h4>
+                  <h6 class="user-city">Pune,Maharashtra</h6>
+                  <p class="comments">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptate laborum minima placeat doloribus quam aspernatur voluptatem? Dolorem, asperiores delectus!</p>
+                </div>
+
+               
+
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+    <!-- contact section -->
+        <section id="contact" class="contact">
+      <div class="contact">
+        <div class="container">
+          <div class="mb-5 text-center">
+              <h5>Let’s Start a Conversation!</h5>
+              <h2 class="fw-bold">Contact Us</h2>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-5 col-md-5 text-center text-lg-center">
+                <h4 class="fw-bold">Contact Info</h4>
+                <ul class="info list-unstyled">
+                  <li class="d-flex align-items-center"> 
+                      <p><a href="">Pune, Maharashtra.</a></p>
+                  </li>
+                  <li class="d-flex align-items-center">
+                      <p><a href="">+91 999-999-9999</a></p>
+                  </li>
+                  <li class="d-flex align-items-center">
+                      <p><a href="">Pelika@eshop.in</a></p>
+                  </li> 
+                </ul>
+            </div>
+            <div class="col-lg-7 col-md-7 pt-lg-0 pt-md-0 pt-4">
+              <form>
+                  <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email address">
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                            <input class="textarea" name="message" cols="30" rows="4" id="message" placeholder="Enter your message">
+                        </div>
+                      </div>
+                      <div class="col-md-12"> 
+                        <button class="btn btn-danger"><span class="ti-rocket pe-2 fs-5"></span> Send Message</button>
+                      </div>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+      <div class="p-3 copyright">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-6 p-1 p-lg-3 text-center text-lg-start">
+                <p class="my-0">Copyright © 2023 <a href="#">Pelika</a> All Rights Reserved</p>
+            </div>
+            <div class="col-12 col-lg-6 p-1 p-lg-3 text-center text-lg-end">
+                <p>Designed by <a href="#" target=" _blank">Shree Pore</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+
+
+    
+
+    <!-- Bootstrap js CDN link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>  
+    <!-- Own JS link  -->
+    <script src="script.js"></script>
+</body>
+</html>

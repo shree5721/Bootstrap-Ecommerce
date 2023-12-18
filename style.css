@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+::root{
+    --bg-danger:#f63440;
+    --bg-white:#fff;
+    --bg-light-white:#f5f5f5;
+
+    --primary-font:"Poppins",sans-serif;
+    --text-black:#121212;
+    --text-danger:#f63440;
+    --text-white:#fff;
+    --text-gray:#aaa;
+    --text-dark-gray:#777;
+}
+body{
+    font-family: var(--primary-font);
+    background: var(--bg-white);
+    overflow-x: hidden;
+}
+a,
+a:hover{
+    text-decoration: none;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.btn-danger{
+    background:var(--bg-danger);
+    border-color:var(--bg-danger);
+    padding:0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.btn-danger:hover{
+    color:var(--text-danger);
+    background:transparent; 
+}
+
+
+/* Navigation styling */
+
+#header .fixed-top{
+    box-shadow: 0 0.12rem 0.60rem rgb(0,0,0,0.7);
+}
+/* #header .navbar-nav .nav-item .nav-link{
+    color:var(--text-black);
+    padding: 0.5rem 1.5rem,;
+    text-align: center; 
+    font-size: 16px; 
+} */
+#header .navbar-nav .nav-item .nav-link,
+#header .navbar-nav .nav-item .nav-link.active{
+    color: var(--text-danger);
+    text-align: center;
+    padding:0.7rem 2rem ;
+}
+#header .navbar-toggler:focus{
+    box-shadow: none;
+    border: none;
+}
+#header .logo{
+    width: 125px;
+}
+/* .navigation .navbar-nav .nav-item .nav-link{
+   padding: 0 20px; 
+   font-size: 16px;
+} */
+
+/* Home banner css */
+
+.home .home-banner-1,
+.home .home-banner-2{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 650px;
+    position: relative;
+}
+.home .home-banner-1{
+    background-image: url(/images/slide2.jpg);
+    
+}
+.home .home-banner-2{
+    background-image: url(/images/slide1.jpg);
+}
+.home .home-banner .home-banner-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-110%,-50%);
+}
+.home .home-banner .home-banner-text h1{
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+/* Offer box styling */
+.offers .offer-banner{
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.offers .offer-banner::after{
+    position: absolute;
+    content: "";
+    width: 30%;
+    margin: auto;
+    height: 2px;
+    background-color: #36191b;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.offers a{
+    text-decoration: none;
+}
+.offers p{
+    margin-bottom: 0;
+}
+.offers p:hover{
+    text-decoration: underline;
+}
+.offers .offer-heading{
+    color: #121212de;
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+.offers .offer-price{
+    font-size: 13px;
+}
+.offers b{
+    color: #121212;
+    margin-right: 5px;
+}
+.offers del{
+    color: #121212e0;
+    margin-right: 5px;
+}
+.offers span{
+    color: #121212e0;
+}
+
+.offers .offer-image img{
+    transition: all 0.6s;
+    object-fit: cover;
+}
+.offers .offer-image img:hover{
+    transform: scale(1.1);
+}
+
+
+/* Styling the pannel */
+.panel{
+    margin-bottom: 30px;
+}
+.panel img{
+    object-fit: cover;
+    width: 100%;
+    transition: all 0.6s;
+}
+.panel .upto-offer img:hover{
+    transform: scale(1.02);
+}
+.panel .upto-offer-cont{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.panel .pannel-offer{
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+/* Styling the special section  */
+.special{
+    background-color: #efebeb;
+    padding: 4rem 0;
+}
+.special .special-headline h2{
+    font-weight: 600;
+}
+.special .special-headline::after{
+    position: absolute;
+    content: "";
+    width: 8%;
+    margin: auto;
+    height: 2px;
+    background-color: #36191b;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.special .special-content h2{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.special .special-content p{
+    font-weight: 300;
+    color: #7e6c6c;
+    margin-bottom: 20px;
+}
+.special .special-content li{
+    display: inline-block;
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: 0 10px;
+    font-weight: 600;
+}
+.special .special-content span{
+    font-weight: 600;
+}
+.special .special-content .countdown-price{
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.special .special-content .countdown-price del{
+    font-size: 16px;
+    color:#7e6c6c ;
+    margin-left: 6px;
+}
+.special .special-image span{
+    position: absolute;
+    background-color: #f63440;
+    padding: 2px 16px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 16px;
+    color: white;
+}
+.special .special-image img{
+    transition:  all 0.6s ;
+}
+.special .special-image img:hover{
+    transform: scale(1.02);
+}
+
+/* Styling review section */
+.testimonial{
+    padding:5rem 0 8rem;
+}
+.testimonial .testimonial-wrapper{
+    box-shadow: 0 0 0.563rem 0 rgb(0 0 0  / 5%);
+    background:var(--bg-white);
+    margin:auto;
+    padding:1rem 5rem;
+    border:0.063rem solid var(--bg-light-white);
+    border-radius: 0.625rem;
+}
+.testimonial .testimonial-wrapper img{
+    border-radius: 100%;
+    width:5rem;
+    height:5rem;
+    margin:1.25rem auto;
+    object-fit:cover;
+    background-color:var(--bg-white);
+    border:0.063rem solid var(--bg-light-white);
+}
+
+.testimonial .testimonial-wrapper span{
+    color:var(--text-gray);
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin:1rem 0;
+    display:block;
+}
+.review .carousel-item p{
+    color:var(--text-gray);
+    font-size: 0.875rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.review .carousel-indicators [data-bs-target]{
+    background-color:black;
+    width:30px;
+    height:5px;
+}
+.review .carousel-indicators{
+    margin-top: 20px;
+}
+
+.review .carousel-item .caro-image img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+.review .carousel-indicators{
+    bottom: -30px;
+  }
+
+  /* Styling form section */
+  .contact{
+    padding:4rem 0;
+    background-color:#f5f5f5;
+}
+.contact .info li p a{
+    font-size: 1rem;
+    display:inline-block;
+    margin:0.75rem 0;
+    color:var(--text-black);
+} 
+.contact .form-group{
+    margin-bottom:1.5rem;
+}
+.contact .form-control{
+    height:3.75rem;
+    padding:0.375rem 1.1875rem;
+    border:none;
+    font-size: 1rem;
+    box-shadow: 0 0.1875rem 1.25rem 0 rgb(0 0 0 / 12%);
+}
+.contact .textarea{
+    width:100%;
+    border-radius: 0.25rem;
+    padding:0.75rem 1.1875rem;
+    border:none;
+    font-size: 1rem;
+    margin-top:0.3125rem;
+    box-shadow: 0 0.1875rem 1.25rem 0 rgb(0 0 0 / 12%);;
+}
+.contact .textarea:focus{
+    outline:none;
+    border:none;
+}
+
+/* Styling footer section */
+.copyright{
+    background-color: #333333;
+}
+.copyright p,
+.copyright a{
+    color:white;
+}
+
+
+
+
+
+
+/* Responsive styling */
+
+@media (max-width:1030px){
+    .home .home-banner-1,
+    .home .home-banner-2{
+        background-position: 65% center;
+        min-height: 550px;
+    }
+    .home .home-banner .home-banner-text{
+        transform: translate(-80%,-50%);
+    }
+}
+@media (max-width:991px){
+    .home .home-banner .home-banner-text{
+        transform: translate(-80%,-50%);
+    }
+    
+}
+@media (max-width:767px){
+    .home .home-banner-1,
+    .home .home-banner-2{
+        background-position:  50% center;
+        min-height: 450px;
+    }
+    .home .home-banner .home-banner-text{
+        text-align: center;
+        width: 100%;
+        transform: translate(-70%,-50%);
+    }
+    .home .home-banner .home-banner-text h1{
+        font-size: 3rem;
+    }
+    .home .home-banner .home-banner-text h2{
+        font-size: 1.2rem;
+    }
+    .home .home-banner .home-banner-text .btn-danger{
+        padding: 0.5rem 1.5rem;
+    }
+    .panel .pannel-offer{
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    .contact ul{
+        text-align: center;
+    }
+
+}
+@media (max-width:476px) {
+    .home .home-banner .home-banner-text h1{
+        font-size: 1.5rem;
+    }
+    .home .home-banner .home-banner-text h2{
+        font-size: 1rem;
+    }
+    .home .home-banner .home-banner-text{
+        
+        transform: translate(-60%,-50%);
+    }
+    .panel .pannel-offer{
+        font-weight: 600;
+        font-size: 0.7rem;
+    }
+
+}
+
+
